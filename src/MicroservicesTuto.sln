@@ -7,25 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{46
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{B03490F7-017A-491C-B042-F2B432073542}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Catalog.API\Catalog.API.csproj", "{3DDD0972-90C1-4E11-AA90-FDBE770A290A}"
-EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3DDD0972-90C1-4E11-AA90-FDBE770A290A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3DDD0972-90C1-4E11-AA90-FDBE770A290A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3DDD0972-90C1-4E11-AA90-FDBE770A290A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3DDD0972-90C1-4E11-AA90-FDBE770A290A}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B03490F7-017A-491C-B042-F2B432073542} = {462B2A27-1361-4722-95D1-014EFB35A39D}
-		{3DDD0972-90C1-4E11-AA90-FDBE770A290A} = {B03490F7-017A-491C-B042-F2B432073542}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2DE5EE38-F20C-4351-A303-993ECFD892CD}
