@@ -1,0 +1,10 @@
+PULL MONGO AND RUN
+	docker pull mongo    <--- pull mongo
+	docker run -d -p 27017:27017 --name shopping-cart mongo  <-- -d (detach) -p(port)   first 27017 is local port, second is docker port number
+
+
+	docker exec -it shopping-cart mongosh  ---then--->
+	show dbs --> show databases
+	use CatalogDb --> create CatalogDb
+	db.createCollection('Products') --> creates collection 'Products' in CatalogDb
+
