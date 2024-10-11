@@ -8,3 +8,5 @@ PULL MONGO AND RUN
 	use CatalogDb --> create CatalogDb
 	db.createCollection('Products') --> creates collection 'Products' in CatalogDb
 
+
+docker-compose -f .\docker-compose.yml -f .\docker-compose.ovverride.yml up -d   <--- will run in docker
