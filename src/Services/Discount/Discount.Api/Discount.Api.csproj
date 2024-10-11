@@ -10,10 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.10" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Discount.Api.Application\Discount.Api.Application.csproj" />
+    <ProjectReference Include="..\Discount.Api.Entities\Discount.Api.Entities.csproj" />
+    <ProjectReference Include="..\Discount.Api.Infrastructure\Discount.Api.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

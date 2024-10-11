@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "Basket.API": {
+    "Discount.Api": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
@@ -8,17 +8,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:5001"
-    },
-    "Container (Dockerfile)": {
-      "commandName": "Docker",
-      "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
-      "environmentVariables": {
-        "ASPNETCORE_URLS": "http://+:80"
-      },
-      "publishAllPorts": true,
-      "useSSL": false
+      "applicationUrl": "http://localhost:5002"
     }
   },
   "$schema": "https://json.schemastore.org/launchsettings.json",
@@ -26,7 +16,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:61596",
+      "applicationUrl": "http://localhost:63757",
       "sslPort": 0
     }
   }
