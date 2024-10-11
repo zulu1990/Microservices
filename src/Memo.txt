@@ -10,3 +10,6 @@ PULL MONGO AND RUN
 
 
 docker-compose -f .\docker-compose.yml -f .\docker-compose.ovverride.yml up -d   <--- will run in docker
+
+REDIS 
+	docker exec -it busketredis /bin/bash  ---then--->
