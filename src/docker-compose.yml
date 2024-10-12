@@ -34,9 +34,16 @@ services:
       context: Services/Discount/Discount.Api
       dockerfile: Dockerfile
 
+  test.api:
+    image: ${DOCKER_REGISTRY-}testapi
+    build:
+      context: .
+      dockerfile: Services/Test/Test.Api/Dockerfile
+
 volumes:
   mongo_data:
   portainer_data:
   postgres_data:
   pgadmin_data:  
+
 

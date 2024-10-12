@@ -81,5 +81,11 @@ services:
       - discountdb
     ports:
       - "8002:80"
-#</webApi>
 
+  test.api:
+    container_name: test.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8888:80"
+#</webApi>
