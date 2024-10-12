@@ -1,10 +1,8 @@
-﻿using Discount.Api.Application.Repositories;
-using Discount.Api.Entities;
+﻿using Dapper;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
-using Dapper;
 
-namespace Discount.Api.Infrastructure.Repositories;
+namespace Discount.Api.Repositories;
 
 public class DiscountRepository : IDiscountRepository
 {
@@ -23,7 +21,7 @@ public class DiscountRepository : IDiscountRepository
         var affected =
             await connection.ExecuteAsync
                 ("INSERT INTO Coupon (ProductName, Description, Amount) VALUES (@ProductName, @Description, @Amount)",
-                        new { ProductName = coupon.ProductName, Description = coupon.Description, Amount = coupon.Amount });
+                        new { coupon.ProductName, coupon.Description, coupon.Amount });
 
         if (affected == 0)
             return false;
@@ -45,10 +43,10 @@ public class DiscountRepository : IDiscountRepository
 
         if (coupon == null)
             return new Coupon
-            { 
+            {
                 ProductName = "No Discount",
-                Amount = 0, 
-                Description = "No Discount Desc" 
+                Amount = 0,
+                Description = "No Discount Desc"
             };
 
         return coupon;
