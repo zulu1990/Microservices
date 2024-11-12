@@ -8,7 +8,6 @@ namespace Discount.Grpc.Extensions
         {
             int retryForAvailability = retry.Value;
 
-            using var scope = services.CreateScope();
             var configuration = services.GetRequiredService<IConfiguration>();
             var logger = services.GetRequiredService<ILogger<TContext>>();
 
